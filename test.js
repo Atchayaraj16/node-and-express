@@ -2,7 +2,7 @@ import express from 'express';
 const app=express()
 const port=5000;
 
-app.get('/',(res,req)=>{
+app.get('/',(req,res)=>{
     res.json({msg:"hello student"})//thi is react 
 });
 app.listen(port,()=>
