@@ -6,3 +6,5 @@ const server=http.createServer((req,res)=>{
 
 })
 server.listen(5000,()=>console.log("server started"));
+//this code is creation of a simple server using node.js like same in express.js
+
