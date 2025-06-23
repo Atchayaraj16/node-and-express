@@ -6,13 +6,12 @@ import{
     moviedelete,
     
 
-}from '../controllers/movie_contoller.js';
+}from '../controllers/movie_controller.js';
  
 const router =express.Router();
 // crud functionality of movies
 // for reading
 router.get('/',movieindex);
-
 // for creation
 router.post('/',moviecreate);
 //for update

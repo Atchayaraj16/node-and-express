@@ -4,6 +4,10 @@ import connectdb from './lib/db.js';
 const app=express();
 const port=5000;
 
+//data understanding middleware
+app.use(express.json());// this is for raw data
+app.use(express.urlencoded({extended:true}));// this is for form data
+
 //connect DB
 connectdb();
 
