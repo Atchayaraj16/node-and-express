@@ -1,14 +1,25 @@
 import Movie from '../models/movie_model.js';
 
 
-export const movieindex=(req,res)=>
+export const movieindex=  async (req,res)=>
 {
-    res.send('get all movies');
+   try{
+    const mov = await Movie.find();
+    res.json(mov);
+   }
+   catch(error){
+    res.status(500).json({message: error.message});
+   }
+
+
+
 };
+
+
 export const moviecreate= async (req,res)=>
 {
     //create movie info
-    //id.title,des
+    //id.title,jdesc
 
     //validate your data
     const newmovie = new Movie({
