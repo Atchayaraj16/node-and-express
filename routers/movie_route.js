@@ -6,7 +6,7 @@ import{
     moviedelete,
     
 
-}from '../conrollers/movie_controller.js';
+}from '../controllers/movie_contoller.js';
  
 const router =express.Router();
 // crud functionality of movies
@@ -14,7 +14,7 @@ const router =express.Router();
 router.get('/',movieindex);
 
 // for creation
-router.post('/',oviecreate);
+router.post('/',moviecreate);
 //for update
 router.put('/:id',movieupdate);
 //for delete
