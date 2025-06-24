@@ -2,7 +2,8 @@ import express from 'express';
 import movieRouters from './routers/movie_route.js';
 import connectdb from './lib/db.js';
 const app=express();
-const port=5000;
+const port= process.env.PORT || 5000;
+;
 
 //data understanding middleware
 app.use(express.json());// this is for raw data
