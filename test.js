@@ -1,9 +1,13 @@
 import express from 'express';
+import cors from 'cors';
 import movieRouters from './routers/movie_route.js';
 import connectdb from './lib/db.js';
 const app=express();
 const port= process.env.PORT || 5000;
-;
+
+
+
+app.use(cors());
 
 //data understanding middleware
 app.use(express.json());// this is for raw data
