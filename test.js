@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}));// this is for form data
 connectdb();
 
 app.get('/',(req,res)=>{
-    res.json({msg:"hello student"})//thi is react 
+    res.json({msg:"hello student"})
 });
 app.use('/movies',movieRouters);
 
